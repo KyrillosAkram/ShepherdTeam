@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/new_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unitMarg"
+                android:layout_marginBottom="@dimen/unitMarg"
+                android:text="@string/new_day"
+                android:textSize="24sp"
+                app:icon="@drawable/plus"
+                app:iconGravity="start"
+                app:iconTintMode="multiply" />
+
+            <Button
+                android:id="@+id/last_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unitMarg"
+                android:layout_marginBottom="@dimen/unitMarg"
+                android:text="@string/last_day"
+                android:textSize="24sp"
+                app:icon="@drawable/history"
+                app:iconGravity="start" />
+
+            <Button
+                android:id="@+id/new_kid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unitMarg"
+                android:layout_marginBottom="@dimen/unitMarg"
+                android:fadingEdge="none"
+                android:onClick="on_goto_new_kid"
+                android:text="@string/new_kid"
+                android:textSize="24sp"
+                app:icon="@drawable/account_plus"
+                app:iconGravity="start" />
+
+            <Button
+                android:id="@+id/edit_kid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unitMarg"
+                android:layout_marginBottom="@dimen/unitMarg"
+                android:text="@string/edit_kid"
+                android:textSize="24sp"
+                app:icon="@drawable/account_edit"
+                app:iconGravity="start" />
+
+            <Button
+                android:id="@+id/searchForKid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unitMarg"
+                android:layout_marginBottom="@dimen/unitMarg"
+                android:text="@string/search"
+                android:textSize="24sp"
+                app:icon="@drawable/clipboard_text_search_outline"
+                app:iconGravity="start" />
+
+            <Button
+                android:id="@+id/searchUsingQuery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unitMarg"
+                android:layout_marginBottom="@dimen/unitMarg"
+                android:text="@string/list"
+                android:textSize="24sp"
+                app:icon="@drawable/clipboard_list_outline"
+                app:iconGravity="start" />
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unitMarg"
+                android:layout_marginBottom="@dimen/unitMarg"
+                android:onClick="on_goto_setting"
+                android:text="@string/setting"
+                android:textSize="24sp"
+                app:icon="@drawable/cog"
+                app:iconGravity="start" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

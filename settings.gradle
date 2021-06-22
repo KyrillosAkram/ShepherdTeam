@@ -1,0 +1,7 @@
+/*buildscript {
+    dependencies {
+        compile 'pub.devrel:easypermissions:0.2.0'
+    }
+}*/
+include ':app'
+rootProject.name = "Shepherd_Team_Alpha"

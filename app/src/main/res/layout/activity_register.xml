@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Shepherd_Team_Alpha.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Shepherd_Team_Alpha.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/kid_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="false"
+            app:layout_constraintBottom_toTopOf="@+id/regionLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="191dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="أسم الطفل رباعي" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/regionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_margin="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/classLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Spinner
+                android:id="@+id/region_spinner"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/region_spinner"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="شارع :"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/classLayout"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Spinner
+                android:id="@+id/class_spinner"
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/class_spinner" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="فصـل :"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سجل"
+            app:layout_constraintBottom_toTopOf="@+id/textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="359dp"
+            android:layout_height="324dp"
+            android:gravity="center_horizontal|top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/showdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="اعرض قاعدة البيانات"
+            app:layout_constraintBottom_toTopOf="@+id/textview"
+            app:layout_constraintEnd_toStartOf="@+id/submit" />
+
+        <Button
+            android:id="@+id/register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginBottom="3dp"
+            android:onClick="on_back"
+            android:text="الشاشة الرئيسية"
+            app:layout_constraintBottom_toTopOf="@+id/textview"
+            app:layout_constraintStart_toEndOf="@+id/submit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

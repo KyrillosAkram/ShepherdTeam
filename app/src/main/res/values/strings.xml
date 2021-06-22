@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">Shepherd_Team_Alpha</string>
+    <string name="new_day">يـــوم جــديــد</string>
+    <string name="last_day">اخــــر يــــــوم</string>
+    <string name="new_kid">تـسجيل طـفـل</string>
+    <string name="edit_kid">تعـديــل طـفـل</string>
+    <string name="search">بحث عن طفل</string>
+    <string name="list">عـرض البيانات</string>
+    <string name="setting">الاعــــــــدادات</string>
+    <string name="title_activity_main2">Shepherd_Team_Alpha</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="mainTitle">الشاشه الرئيسية</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_register">تسجيل_طفل</string>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Preference Titles -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Messages Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+
+    <!-- Sync Preferences -->
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string-array name="region_spinner">
+        <item>التقسيم البحري</item>
+        <item>التقسيم القبلي</item>
+        <item>الشـونه البحري</item>
+        <item>الشـونه القبلي</item>
+        <item>الصيانه الكبير</item>
+        <item>الصيانه الصغير</item>
+    </string-array>
+    <string-array name="class_spinner">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>
